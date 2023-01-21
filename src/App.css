@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@700&display=swap');
+
+:root {
+  --primary: #FF8A00;
+  --fade-primary: rgba(255, 138, 0, .3);
+  --dark-primary: hsl(32, 100%, 42%);
+  --yellow: #FFFAE6;
+  --white: #FFFFFF;
+  --dark-grey: #989898;
+  --grey: #EEEEEE;
+  --light-green: #9efacc;
+  --valid: #1BD97B;
+  --invalid: #FF8A00;
+  --black: #2D2A40;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-primary {
+  color: var(--primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hidden {
+  visibility: hidden;
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
