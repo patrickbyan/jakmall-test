@@ -219,11 +219,13 @@ export const ButtonSelect = ({ children: content, selected, ...rest }) => {
 
   return (
     <div style={{ maxWidth: '180px' }}>
-      <Button {...props}>
+      <Button {...props} height="30">
         <div>{content}</div>
-        <div style={{ fontSize: '14px', opacity: 0.6, color: 'var(--valid)' }}>
-          <span className="material-symbols-outlined">done</span>
-        </div>
+        {selected && (
+          <div style={{ fontSize: '14px', opacity: 0.6, color: 'var(--valid)' }}>
+            <span className="material-symbols-outlined">done</span>
+          </div>
+        )}
       </Button>
     </div>
   )

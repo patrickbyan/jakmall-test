@@ -8,10 +8,12 @@ const Checkbox = styled.input.attrs({
   type: 'checkbox',
 })`
   translate: -13em;
+  accent-color: var(--valid);
   &::after {
     content: 'Send as dropshipper';
     white-space: nowrap;
     margin-left: 1.5em;
+    cursor: pointer;
   }
 
   @media only screen and (max-width: ${MEDIA_SIZES.lg}) {
